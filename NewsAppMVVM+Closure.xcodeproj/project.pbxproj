@@ -14,6 +14,7 @@
 		BA13C35927E073E1002DB1F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA13C35827E073E1002DB1F8 /* Assets.xcassets */; };
 		BA13C35C27E073E1002DB1F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA13C35A27E073E1002DB1F8 /* LaunchScreen.storyboard */; };
 		BA13C36727E07425002DB1F8 /* NewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13C36627E07425002DB1F8 /* NewModel.swift */; };
+		BA13C36A27E07480002DB1F8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13C36927E07480002DB1F8 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA13C35B27E073E1002DB1F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA13C35D27E073E1002DB1F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA13C36627E07425002DB1F8 /* NewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
+		BA13C36927E07480002DB1F8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		BA13C34E27E073E1002DB1F8 /* NewsAppMVVM+Closure */ = {
 			isa = PBXGroup;
 			children = (
+				BA13C36827E0746D002DB1F8 /* Service */,
 				BA13C36427E07406002DB1F8 /* Model */,
 				BA13C36327E073FD002DB1F8 /* View */,
 				BA13C36527E0740C002DB1F8 /* ViewModel */,
@@ -92,6 +95,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA13C36827E0746D002DB1F8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA13C36927E07480002DB1F8 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				BA13C36727E07425002DB1F8 /* NewModel.swift in Sources */,
 				BA13C35427E073E1002DB1F8 /* ViewController.swift in Sources */,
 				BA13C35027E073E1002DB1F8 /* AppDelegate.swift in Sources */,
+				BA13C36A27E07480002DB1F8 /* Webservice.swift in Sources */,
 				BA13C35227E073E1002DB1F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
