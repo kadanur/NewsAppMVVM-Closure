@@ -22,7 +22,6 @@ class WebService {
     func fetchData(completion: @escaping ([News]?) -> Void) {
         
         URLSession.shared.dataTask(with: WebServiceEndPoint.newsPath()) { data, response, error in
-            
             if error != nil {
                 print("Url error.")
                 completion(nil)
@@ -36,32 +35,7 @@ class WebService {
                     completion(nil)
                 }
             }
-            
         }.resume()
-        
     }
-    
-    func getNewsData(url: URL, completion: @escaping ([News]?) -> Void){
-         URLSession.shared.dataTask(with: url) { data, response, error in
-                if let error = error {
-                    print("ERROR 1")
-                    print(error.localizedDescription)
-                    completion(nil)
-                }else if let data = data {
-                    do{
-                        let result = try JSONDecoder().decode(NewsModel.self, from: data)
-                        completion(result.articles)
-                    }catch{
-                        print("ERROR 2")
-                        print("-------------")
-                        print(error.localizedDescription)
-                        print("--------------")
-                        print(String(describing: error))
-                        print("--------------")
-                        completion(nil)
-                    }
-                }
-            }.resume()
-     }
     
 }

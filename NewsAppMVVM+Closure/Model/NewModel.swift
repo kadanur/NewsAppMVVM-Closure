@@ -14,15 +14,6 @@ struct NewsModel: Codable {
 
 struct News: Codable {
     let title: String?
-    let url: String?
-    let urlToImage: String?
-    let author: String?
-    let description: String?
-    let content: String?
-    let source: NewsSource?
 }
 
-struct NewsSource: Codable {
-    let id: String?
-    let name: String?
-}
+
